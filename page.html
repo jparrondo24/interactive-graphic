@@ -3,23 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Interactive Graphic Template</title>
-    <link rel="stylesheet" href=".style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
   </head>
-  <body>
-    <div class="container-fluid">
-      <h1>Title</h1>
-      <p>Short little description</p>
-      <div style="max-width: 800px; max-height: 450px" class="embed-responsive embed-responsive-16by9">
-        <iframe style="max-width: 800px; max-height: 450px" embed-responsive-item" src="https://www.youtube.com/embed/oHg5SJYRHA0?rel=0" frameborder="0" allowfullscreen"></iframe>
+  <body id="bd">
+    <div id="loading-screen" class="container-fluid">
+      <img src="#" alt="loading screen" />
+    </div>
+    <div id="main-screen" class="container-fluid">
+      <br />
+      <div class="header">
+        <img class="chalkboard-side" src="./res/chalkboard-top.png" alt="top" width="100%"/>
+        <div id="chalkboard">
+          <h1 class="text-center" id="title-line">                             </h1>
+          <br />
+          <div class="row">
+            <div class="col-lg-3 col-xs-4 col-md-2 col-sm-1"></div>
+            <div class="col-lg-6 col-xs-4 col-md-8 col-sm-10">
+              <div id="yt-video-container" style="max-width: 800px; max-height: 450px" class="embed-responsive embed-responsive-16by9">
+                <iframe id="yt-video" class="embed-responsive-item" src="https://www.youtube.com/embed/oHg5SJYRHA0?rel=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            <div class="col-lg-3 col-xs-4 col-md-2 col-sm-1"></div>
+            </div>
+          </div>
+          <br />
+          <div class="row" id="header-gif-row">
+            <div class="col-md-6">
+              <img class="img-fluid" id="left-arrow" src="#" alt="" />
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" id="ccnn-live-animation" src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <img class="img-responsive chalkboard-side" src="./res/chalkboard-bottom.png" alt="bottom" width="100%" />
       </div>
+
       <hr />
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div id="qp_all1858307" style="width:100%;"><link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'><STYLE>#qp_main1858307 .qp_btna:hover input {background: rgb(0, 38, 68)!important} #qp_all1858307 {max-width:815px;}</STYLE><div id="qp_main1858307" fp='1AB79DbD-50' results=0 style="border-radius: 16px;margin: 0px auto;padding: 15px;background: rgb(0, 109, 197);font-family: 'Open Sans', sans-serif, Arial;color: rgb(0, 0, 0);border: 2px solid rgb(237, 18, 33);max-width: 815px;box-sizing: border-box"><div style="font-size: 1.2em;background-color: rgb(0, 67, 121);color: rgb(255, 255, 255);font-family: 'Open Sans', sans-serif, Arial"><div style="line-height: 30px;padding: 10px 15px">What do you think is cool?</div></div><form id="qp_form1858307" action="//www.poll-maker.com/results1858307x1AB79DbD-50" method="post" target="_blank" style="display: inline;margin: 0px;padding: 0px"><div style="padding: 0px"><input type=hidden name="qp_d1858307" value="42977.2233449031-42977.223330359"><div style="color: rgb(255, 255, 255);background-color: rgb(0, 141, 255);font-family: 'Open Sans', sans-serif, Arial;font-size: 1.1em;line-height: 1.5;padding: 13px 8px 10px;margin: 10px 0px;clear: both;border-radius: 6px" class="qp_a" onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}"><span style="display: block;padding-left: 30px;cursor: inherit"><input style="float: left;width: 20px;margin-left: -25px;margin-top: 2px;padding: 0px;height: 20px;-webkit-appearance:radio;" name="qp_v1858307" type="radio" value="1" />Stuff</span></div><div style="color: rgb(255, 255, 255);background-color: rgb(0, 141, 255);font-family: 'Open Sans', sans-serif, Arial;font-size: 1.1em;line-height: 1.5;padding: 13px 8px 10px;margin: 10px 0px;clear: both;border-radius: 6px" class="qp_a" onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}"><span style="display: block;padding-left: 30px;cursor: inherit"><input style="float: left;width: 20px;margin-left: -25px;margin-top: 2px;padding: 0px;height: 20px;-webkit-appearance:radio;" name="qp_v1858307" type="radio" value="2" />Hello World</span></div><div style="color: rgb(255, 255, 255);background-color: rgb(0, 141, 255);font-family: 'Open Sans', sans-serif, Arial;font-size: 1.1em;line-height: 1.5;padding: 13px 8px 10px;margin: 10px 0px;clear: both;border-radius: 6px" class="qp_a" onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}"><span style="display: block;padding-left: 30px;cursor: inherit"><input style="float: left;width: 20px;margin-left: -25px;margin-top: 2px;padding: 0px;height: 20px;-webkit-appearance:radio;" name="qp_v1858307" type="radio" value="3" />CCNN</span></div><div style="color: rgb(255, 255, 255);background-color: rgb(0, 141, 255);font-family: 'Open Sans', sans-serif, Arial;font-size: 1.1em;line-height: 1.5;padding: 13px 8px 10px;margin: 10px 0px;clear: both;border-radius: 6px" class="qp_a" onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}"><span style="display: block;padding-left: 30px;cursor: inherit"><input style="float: left;width: 20px;margin-left: -25px;margin-top: 2px;padding: 0px;height: 20px;-webkit-appearance:radio;" name="qp_v1858307" type="radio" value="4" />Just Justin</span></div></div><div style="padding-left: 0px;clear: both;text-align: left;margin: 1em auto"><a style="display: inline-block;box-sizing: border-box;padding-right: 5px;text-decoration: none" class="qp_btna" href="#"><input name="qp_b1858307" style="min-width: 8.5em;padding: 0.5em;background-color: rgb(0, 67, 121);font-family: 'Open Sans', sans-serif, Arial;font-size: 16px;color: rgb(255, 255, 255);cursor: pointer;border: 0px;-webkit-appearance: none;border-radius: 0px" type="submit" btype="v" value="Vote" /></a><a style="display: inline-block;box-sizing: border-box;padding-left: 5px;text-decoration: none" class="qp_btna" href="#"><input name="qp_b1858307" style="min-width: 8.5em;padding: 0.5em;background-color: rgb(0, 67, 121);font-family: 'Open Sans', sans-serif, Arial;font-size: 16px;color: rgb(255, 255, 255);cursor: pointer;border: 0px;-webkit-appearance: none;border-radius: 0px" type="submit" btype="r" value="Results" /></a></div><a id="qp_a1858307" style="float:right;font-family:Arial;font-size:10px;color:rgb(0,0,0);text-decoration:none" href="https://www.survey-maker.com">survey software</a></form><div style="display:none"><div id="qp_rp1858307" style="font-size: 11px;width: 5ex;text-align: right;overflow: hidden;position: absolute;right: 5px;height: 1.5em;line-height: 1.5em"></div><div id="qp_rv1858307" style="font-size: 11px;width: 0%;line-height: 1.5em;text-align: right;color: rgb(255, 255, 255);box-sizing: border-box;padding-right: 3px"></div><div id="qp_rb1858307" style="color: rgb(255, 255, 255);display: block;font-size: 12px"></div><div id="qp_rva1858307" style="background: rgb(0, 111, 185);border-color: rgb(0, 111, 185)"></div><div id="qp_rvb1858307" style="background: rgb(22, 52, 99);border-color: rgb(22, 52, 99)"></div><div id="qp_rvc1858307" style="background: rgb(91, 207, 252);border-color: rgb(20, 129, 171)"></div></div></div></div><script src="//scripts.poll-maker.com/3012/scpolls.js" language="javascript"></script>
       <hr />
       <p>More Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <p>Even more Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -30,4 +56,132 @@
       </div>
     </div>
   </body>
+  <script>
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function playGif(gifId, gifTime, stillImage, movingImage) {
+      document.getElementById(gifId).src = movingImage;
+      for (var i = 0; i <= gifTime; i++) {
+        await sleep(1000);
+        if (i == gifTime) {
+          document.getElementById(gifId).src = stillImage;
+        }
+      }
+    }
+
+    async function typeWrite(textId, string, beginningIndex, endingIndex) {
+      for (var i = 0; i < string.length; i++) {
+        await sleep(100);
+        document.getElementById(textId).innerHTML = string.substring(0, i + 1);
+      }
+      await sleep(200);
+      emphasize(textId, string, beginningIndex, endingIndex);
+    }
+
+    async function emphasize(textId, string, beginningIndex, endingIndex) {
+      /* document.getElementById(textId).innerHTML =
+      string.substring(0, beginningIndex) + "<em><strong>" +
+      string.substring(beginningIndex, endingIndex) + "</strong></em> " +
+      string.substring(endingIndex, string.length + 1); */
+      var x = document.getElementById(textId);
+      var stringLength = endingIndex - beginningIndex;
+      for (var i = 0; i < stringLength; i++) {
+        x.innerHTML = string.substring(0, beginningIndex) +
+                      "<u>" + string.substring(beginningIndex, i + beginningIndex + 1) +
+                      "</u>" + string.substring(i + beginningIndex + 1, endingIndex)
+                      + string.substring(endingIndex, string.length);
+        await sleep(200);
+      }
+    }
+
+    function toggleElement(id) {
+      var element = document.getElementById(id);
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+
+    function changeBackground(id, color) {
+      document.getElementById(id).setAttribute("style", "background-color: " + color);
+    }
+
+    function spawnGif(id, src, alt) {
+      document.getElementById(id).src = src;
+      document.getElementById(id).alt = alt;
+    }
+    var wasInView = false;
+
+    async function main() {
+      toggleElement("loading-screen");
+      console.log("Loaded")
+      changeBackground("bd", "#22467f")
+      toggleElement("main-screen");
+      await sleep(750);
+      var headerString = "Back to School: the New Teachers' Story";
+
+      typeWrite("title-line", headerString, 24, 32);
+
+      spawnGif("left-arrow", "./res/arrow.png", "down arrow");
+      spawnGif("ccnn-live-animation", "./res/ccnnlive-still.gif", "CCNN Live");
+
+      var ccnnLiveAnimation = document.getElementById("ccnn-live-animation");
+      var leftArrow = document.getElementById("left-arrow");
+
+      window.onscroll = function() {
+        playGifWhenSeen("left-arrow", 2, "./res/arrow.png", "./res/arrow.gif", leftArrowState);
+        playGifWhenSeen("ccnn-live-animation", 6, "./res/ccnnlive-still.gif", "./res/ccnnlive.gif", ccnnLiveState);
+      }
+
+      ccnnLiveAnimation.onmouseover = function() {
+        playGifWhenSeen("ccnn-live-animation", 6, "./res/ccnnlive-still.gif", "./res/ccnnlive.gif", ccnnLiveState);
+      }
+      leftArrow.onmouseover = function() {
+        playGifWhenSeen("left-arrow", 2, "./res/arrow.png", "./res/arrow.gif", leftArrowState);
+      }
+
+    }
+    var leftArrowState = false;
+    var ccnnLiveState = false;
+
+    async function playGifWhenSeen(id, time, stillImage, movingImage, lastState) {
+      var element = document.getElementById(id);
+      if ((isInViewport(element) == true) && (lastState == false)) {
+        playGif(id, time, stillImage, movingImage);
+        if (id == "left-arrow") {
+          leftArrowState = true;
+        } else {
+          ccnnLiveState = true;
+        }
+      } else {
+        if (isInViewport(element) == false) {
+          if (id == "left-arrow") {
+            leftArrowState = false;
+          } else {
+            ccnnLiveState = false;
+          }
+        }
+      }
+    }
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      var html = document.documentElement;
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || html.clientHeight) &&
+        rect.right <= (window.innerWidth || html.clientWidth)
+      );
+    }
+
+    changeBackground("bd", "#63BA82");
+    toggleElement("main-screen");
+
+    window.onload = function() {
+      main();
+    }
+  </script>
 </html>

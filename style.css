@@ -1,4 +1,89 @@
-.yt-video {
-	max-width: 500 !important;
-	max-height: 281 !important;
+@font-face {
+	font-family: "Chalkboard";
+	src: url("./res/KGTenThousandReasons.ttf") format("truetype");
+}
+
+#loading-screen {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	background-color: #63BA82;
+	length: 100%;
+}
+
+#loading-screen img {
+	max-width: 85%;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body h1, p {
+	color: white;
+	font-family: "Roboto", sans-serif;
+}
+
+body h1 {
+	font-size: 4vw;
+	font-family: "Roboto Bold", "Roboto", sans-serif;
+}
+
+body p {
+	font-size: 18px;
+}
+
+.header h1 {
+	text-align: center;
+	font-family: "Chalkboard", sans-serif;
+	max-width: 11em;
+	min-height: 2.5em;
+	display: inline-block;
+	margin: 30px;
+}
+
+.header {
+	max-width: 90%;
+	text-align: center;
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.chalkboard-side {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+#left-arrow {
+	margin-top: 50px;
+	max-width: 25%;
+	margin-left: 25%;
+}
+
+#ccnn-live-animation {
+	max-width: 400px;
+	margin-top: 30px;
+	width: 100%;
+}
+
+#chalkboard {
+	margin: 0;
+	background-image: url("./res/chalkboard.png");
+	background-size: 100% auto;
+}
+
+#yt-video-container {
+	text-align: center;
+}
+
+#yt-video {
+	max-width: 800px 50%;
+	max-height: 450px auto;
 }
