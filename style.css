@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Chalkboard";
-	src: url("/599ee7f08584dcd7f7124bdb95b74f560ad8dd38/dc0c7/res/kgtenthousandreasons.ttf") format("truetype");
+	src: url("./res/KGTenThousandReasons.ttf") format("truetype");
 }
 
 #loading-screen {
@@ -31,7 +31,7 @@ body h1 {
 }
 
 body p {
-	font-size: 2.5vw;
+	font-size: 1.5vw;
 	line-height: 40px;
 }
 
@@ -83,7 +83,7 @@ body p {
 
 #chalkboard {
 	margin: 0;
-	background-image: url("/res/265f0f0bfe4eddd232a15f887ae28f86c5ad5939/chalkboard.png");
+	background-image: url("./res/chalkboard.png");
 	background-size: 100% auto;
 }
 
